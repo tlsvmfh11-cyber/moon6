@@ -52,7 +52,7 @@ export default function System() {
               <div className="absolute top-0 right-0 p-6 opacity-10 font-serif text-8xl text-white group-hover:opacity-20 transition-opacity">
                 {item.num}
               </div>
-              
+
               <div className="relative z-10 pt-10">
                 <h3 className="text-2xl font-serif text-white mb-2">{item.title}</h3>
                 <h4 className="text-bronze-accent font-bold text-lg mb-6">{item.korTitle}</h4>
@@ -63,10 +63,10 @@ export default function System() {
             </motion.div>
           ))}
         </div>
-        
+
         {/* Full Width Image Banner */}
         <div className="mt-20 w-full h-[400px] overflow-hidden relative">
-            <img src="/images/강남 달토 문6 4번.jpg" alt="System Mood" className="w-full h-full object-cover grayscale opacity-60" />
+            <img src="/images/system.jpg" alt="강남 달토 시스템" className="w-full h-full object-cover grayscale opacity-60" />
             <div className="absolute inset-0 flex items-center justify-center">
                 <p className="text-white font-serif text-3xl md:text-5xl italic text-center">
                     "Structure makes Difference."

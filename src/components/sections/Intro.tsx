@@ -5,9 +5,9 @@ export default function Intro() {
     <section id="intro" className="py-32 bg-charcoal relative">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-20 items-start">
-          
+
           {/* Left: Text Content */}
-          <motion.div 
+          <motion.div
             className="w-full lg:w-1/2 pt-10"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -20,7 +20,7 @@ export default function Intro() {
               가격 기준으로 보면<br />
               이런 구조입니다.
             </h2>
-            
+
             <div className="space-y-8 text-lg text-gray-300 font-normal leading-relaxed">
               <p>
                 강남에서 술자리를 알아보는 분들 중 상당수는
@@ -41,15 +41,15 @@ export default function Intro() {
               </p>
               <div className="pl-6 border-l border-bronze-accent py-2">
                 <p className="text-white italic">
-                  “비싼 데 한 번 가느냐”보다는<br />
-                  “합리적인 비용으로 만족도를 꾸준히 가져가느냐”
+                  "비싼 데 한 번 가느냐"보다는<br />
+                  "합리적인 비용으로 만족도를 꾸준히 가져가느냐"
                 </p>
               </div>
             </div>
           </motion.div>
 
           {/* Right: Image Grid */}
-          <motion.div 
+          <motion.div
             className="w-full lg:w-1/2 grid grid-cols-2 gap-4"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function Intro() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="space-y-4 mt-12">
-                <img src="/images/강남 달토 문6 2번.jpg" alt="Interior 1" className="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                <img src="/images/intro1.jpg" alt="강남 달토 인테리어" className="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700" />
                 <div className="p-6 bg-bronze-900">
                     <p className="text-bronze-accent text-sm tracking-widest uppercase mb-2">Since 2020</p>
                     <p className="text-white font-serif text-xl">Legacy</p>
@@ -68,7 +68,7 @@ export default function Intro() {
                     <p className="text-gray-400 text-sm tracking-widest uppercase mb-2">Location</p>
                     <p className="text-white font-serif text-xl">Gangnam</p>
                 </div>
-                <img src="/images/강남 달토 문6 3번.jpg" alt="Interior 2" className="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                <img src="/images/intro2.jpg" alt="강남 달토 룸" className="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700" />
             </div>
           </motion.div>
 

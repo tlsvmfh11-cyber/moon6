@@ -7,9 +7,9 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-charcoal/60 z-10" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-charcoal/20 to-charcoal z-10" />
-        <img 
-          src="/images/강남 달토 문6 1번.jpg" 
-          alt="Gangnam Luxury Lounge" 
+        <img
+          src="/images/hero.jpg"
+          alt="강남 달토 하이퍼블릭"
           className="w-full h-full object-cover object-center animate-[scaleIn_20s_ease-out_infinite_alternate]"
         />
       </div>
@@ -37,13 +37,13 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a 
+            <a
               href="#contact"
               className="px-10 py-4 bg-bronze-accent text-charcoal font-bold text-lg hover:bg-champagne transition-colors duration-300 min-w-[200px]"
             >
               예약 문의
             </a>
-            <a 
+            <a
               href="#intro"
               className="px-10 py-4 border border-white/20 text-white font-medium hover:bg-white/5 transition-colors duration-300 min-w-[200px]"
             >

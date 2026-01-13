@@ -6,7 +6,7 @@ export default function Contact() {
     <section id="contact" className="py-32 bg-charcoal relative overflow-hidden">
         {/* Background Image Overlay */}
         <div className="absolute inset-0 z-0 opacity-20">
-            <img src="/images/강남 달토 문6 5번.jpg" alt="Contact BG" className="w-full h-full object-cover" />
+            <img src="/images/contact.jpg" alt="강남 달토 연락" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-charcoal mix-blend-multiply" />
         </div>
 
@@ -22,7 +22,7 @@ export default function Contact() {
             <h2 className="text-5xl md:text-7xl font-serif text-white mb-10">
                 픽업 서비스 · 예약 안내
             </h2>
-            
+
             <p className="text-xl text-gray-200 font-medium mb-12 leading-relaxed">
                 강남 달토는 가격 문의만 주셔도 괜찮습니다.<br />
                 굳이 예약을 바로 하지 않으셔도 됩니다.
