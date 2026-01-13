@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  /* Midnight Bronze Palette */
+  --color-bronze-900: #1a1510;
+  --color-bronze-800: #2d241b;
+  --color-bronze-accent: #cd7f32;
+  --color-champagne: #f7e7ce;
+  --color-charcoal: #121212;
+  
+  --font-serif: 'Playfair Display', 'Nanum Myeongjo', serif;
+  --font-sans: 'Pretendard', sans-serif;
+
+  --animate-fade-up: fadeUp 1s ease-out forwards;
+  --animate-reveal: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes reveal {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-charcoal);
+  }
+  
+  body {
+    @apply text-white antialiased overflow-x-hidden font-sans;
+    background-color: var(--color-charcoal);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  ::selection {
+    background-color: var(--color-bronze-accent);
+    color: white;
+  }
+}
+
+@layer utilities {
+  .text-bronze-gradient {
+    background: linear-gradient(to right, #cd7f32, #f7e7ce, #cd7f32);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shine 5s linear infinite;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
